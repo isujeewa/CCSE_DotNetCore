@@ -13,17 +13,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StockService", "StockServic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TransactionService", "TransactionService", "{F0A707FE-8436-4477-9B25-D7080A61890A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCSE.AuthServer", "CCSE.AuthServer\CCSE.AuthServer.csproj", "{5103F795-0A7C-4B2A-B2CA-70EF55C04CB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CCSE.AuthServer", "CCSE.AuthServer\CCSE.AuthServer.csproj", "{5103F795-0A7C-4B2A-B2CA-70EF55C04CB2}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{32681B83-8C64-4A18-A094-7665CAEAC2A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCSE.Utils", "CCSE.Utils\CCSE.Utils.csproj", "{1B3242F8-18D8-4856-9C3A-3EFAB8F2507D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CCSE.Utils", "CCSE.Utils\CCSE.Utils.csproj", "{1B3242F8-18D8-4856-9C3A-3EFAB8F2507D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCSE.StockApi", "CCSE.StockApi\CCSE.StockApi.csproj", "{B1853AB0-5EE5-490E-8B36-3CB1C9CB4CE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CCSE.StockApi", "CCSE.StockApi\CCSE.StockApi.csproj", "{B1853AB0-5EE5-490E-8B36-3CB1C9CB4CE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCSE.TransactionApi", "CCSE.TransactionApi\CCSE.TransactionApi.csproj", "{B5E81D29-CE27-4D6D-8A73-4B3F9AAD71BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CCSE.TransactionApi", "CCSE.TransactionApi\CCSE.TransactionApi.csproj", "{B5E81D29-CE27-4D6D-8A73-4B3F9AAD71BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCSE.UserService", "CCSE.UserService\CCSE.UserService.csproj", "{02064850-23BC-4B80-B0C1-9F9D7E52DE1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CCSE.UserService", "CCSE.UserService\CCSE.UserService.csproj", "{02064850-23BC-4B80-B0C1-9F9D7E52DE1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevOpsv", "DevOpsv", "{50842186-293F-448F-81C8-AB9FE12726B2}"
+	ProjectSection(SolutionItems) = preProject
+		DevOps\auth-secret.yml = DevOps\auth-secret.yml
+		DevOps\auth.yml = DevOps\auth.yml
+		DevOps\stock-secret.yml = DevOps\stock-secret.yml
+		DevOps\stock.yml = DevOps\stock.yml
+		DevOps\transaction-secret.yml = DevOps\transaction-secret.yml
+		DevOps\transaction.yml = DevOps\transaction.yml
+		DevOps\user-secret.yml = DevOps\user-secret.yml
+		DevOps\user.yml = DevOps\user.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

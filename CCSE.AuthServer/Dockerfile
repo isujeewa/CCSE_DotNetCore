@@ -6,7 +6,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["/var/jenkins_home/workspace/CloudSE/CCSE.AuthServer/CCSE.AuthServer.csproj", "CCSE.AuthServer/"]
+COPY ["/CloudSE/CCSE.AuthServer/CCSE.AuthServer.csproj", "CCSE.AuthServer/"]
 RUN dotnet restore "CCSE.AuthServer/CCSE.AuthServer.csproj"
 COPY . .
 WORKDIR "/src/CCSE.AuthServer"

@@ -45,6 +45,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		UserServiceDockerfile = UserServiceDockerfile
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Argocd", "Argocd", "{2C70DBF8-D937-4014-BEE6-AEC6F4C7F6AE}"
+	ProjectSection(SolutionItems) = preProject
+		Applicaiton.yml = Applicaiton.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +93,7 @@ Global
 		{B1853AB0-5EE5-490E-8B36-3CB1C9CB4CE2} = {2FE10182-B909-45E4-9B96-2953F719D5BD}
 		{B5E81D29-CE27-4D6D-8A73-4B3F9AAD71BE} = {F0A707FE-8436-4477-9B25-D7080A61890A}
 		{02064850-23BC-4B80-B0C1-9F9D7E52DE1F} = {A7333084-793D-4251-85EA-986B8D8822EA}
+		{2C70DBF8-D937-4014-BEE6-AEC6F4C7F6AE} = {50842186-293F-448F-81C8-AB9FE12726B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F0719DAE-9F0D-4782-8CAD-32F2151EE220}

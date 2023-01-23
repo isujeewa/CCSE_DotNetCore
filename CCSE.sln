@@ -40,6 +40,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4A23E2E3-BA58-4DE0-BDAD-8777B607E00E}"
 	ProjectSection(SolutionItems) = preProject
 		Dockerfile = Dockerfile
+		StockServiceDockerfile = StockServiceDockerfile
+		TransactionDockerfile = TransactionDockerfile
 		UserServiceDockerfile = UserServiceDockerfile
 	EndProjectSection
 EndProject

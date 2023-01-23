@@ -13,7 +13,7 @@ spec:
       targetPort: 80 #image port
       nodePort: 31001 # outside
   selector:
-    name: authapi-pod
+    name: auth-pod
     app: CloudSE
 ---
 apiVersion: apps/v1

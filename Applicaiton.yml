@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: CloudSE
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/isujeewa/CCSE_DotNetCore.git
+    targetRevision: HEAD
+    path: ArgoCD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default

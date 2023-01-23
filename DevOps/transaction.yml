@@ -13,7 +13,7 @@ spec:
       targetPort: 80 #image port
       nodePort: 31004 # outside
   selector:
-    name: transactionapi-pod
+    name: transaction-pod
     app: CloudSE
 ---
 apiVersion: apps/v1

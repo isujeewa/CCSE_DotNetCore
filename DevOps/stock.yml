@@ -13,7 +13,7 @@ spec:
       targetPort: 80 #image port
       nodePort: 31003 # outside
   selector:
-    name: stockapi-pod
+    name: stock-pod
     app: CloudSE
 ---
 apiVersion: apps/v1

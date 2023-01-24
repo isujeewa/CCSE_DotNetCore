@@ -1,6 +1,4 @@
-using CCSE.StockApi.Data;
-using CCSE.StockApi.IRepositories;
-using CCSE.StockApi.Repositories;
+
 using CCSE.Utils;
 using IdentityServer4.EntityFramework.DbContexts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -9,20 +7,26 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Reflection;
+using Microsoft.Extensions.DependencyInjection;
+using Serilog;
+using CCSE.StockApi.Controllers;
+using CCSE.StockApi.Data;
+using Microsoft.AspNetCore.Hosting;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+var applicationDbContextConnectionString = builder.Configuration.GetConnectionString("ApplicationDbContext");
 
 builder.Configuration
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
     .AddEnvironmentVariables();
 
-var config = CustomExtensionsMethods.GetConfiguration();
-
-// Add services to the container.
+builder.Host.UseSerilog(SeriLogger.ConfigureHostBuilder);
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -31,24 +35,32 @@ builder.Services
     .AddCustomAuthentication(builder.Configuration)
     .AddCustomDbContext(builder.Configuration);
 
+
+
+
 var app = builder.Build();
-// Configure the HTTP request pipeline.
+//Adding Db context for connection string
 
 
 
-
- 
-
-             
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+app.UseCors(Constants.AllowedSpecificOriginsPolicyName);
+
+app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
 
 await app.RunAsync();
 
@@ -71,7 +83,7 @@ static class CustomExtensionsMethods
         // get the allowed host as a string array
         var allowedOrigins = configuration.GetSection("UsedHostNames").GetChildren().Select(a => a.Value).ToArray();
 
-        // enable cors only for specific origins
+        //// enable cors only for specific origins
         services.AddCors(options =>
         {
             options.AddPolicy(Constants.AllowedSpecificOriginsPolicyName,
@@ -109,6 +121,24 @@ static class CustomExtensionsMethods
     {
         var identityUrl = configuration.GetValue<string>("IdentityUrl");
 
+        string applicationDbContextConnectionString =
+   configuration.GetSection("ConnectionStrings").GetValue<string>("ApplicationDbContext");
+
+        var migrationsAssembly = typeof(Program).GetTypeInfo().Assembly.GetName().Name;
+
+        // User db context
+        services.AddDbContext<CCSEStockApiContext>(options =>
+        {
+            options.UseNpgsql(applicationDbContextConnectionString,
+                npgsqlOptionsAction: psqlOptions =>
+                {
+                    psqlOptions.EnableRetryOnFailure(
+                         maxRetryCount: 10,
+                    maxRetryDelay: TimeSpan.FromSeconds(30), errorCodesToAdd: null);
+                    psqlOptions.MigrationsAssembly(typeof(Program).GetTypeInfo().Assembly.GetName().Name);
+                });
+        });
+
         services.AddAuthentication(options =>
         {
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -134,22 +164,19 @@ static class CustomExtensionsMethods
 
         var migrationsAssembly = typeof(Program).GetTypeInfo().Assembly.GetName().Name;
 
-        // User db context
-        services.AddDbContext<StockDBContext>(options =>
+        services.AddDbContext<CCSEStockApiContext>(options =>
         {
             options.UseNpgsql(applicationDbContextConnectionString,
-                npgsqlOptionsAction: psqlOptions =>
-                {
-                    psqlOptions.EnableRetryOnFailure(
-                         maxRetryCount: 10,
-                    maxRetryDelay: TimeSpan.FromSeconds(30), errorCodesToAdd: null);
-                    psqlOptions.MigrationsAssembly(typeof(Program).GetTypeInfo().Assembly.GetName().Name);
-                });
+            npgsqlOptionsAction: psqlOptions =>
+            {
+                psqlOptions.EnableRetryOnFailure(
+        maxRetryCount: 10,
+        maxRetryDelay: TimeSpan.FromSeconds(30), errorCodesToAdd: null);
+                psqlOptions.MigrationsAssembly(typeof(Program).GetTypeInfo().Assembly.GetName().Name);
+            })
+            .UseLoggerFactory(LoggerFactory.Create(builder => builder.AddDebug())); ;
         });
 
-
-
-        services.AddTransient<IStockRepository, StockRepository>();
         return services;
     }
 }

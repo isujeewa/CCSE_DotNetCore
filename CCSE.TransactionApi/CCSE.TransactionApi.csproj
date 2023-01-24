@@ -20,4 +20,8 @@
     <ProjectReference Include="..\CCSE.Utils\CCSE.Utils.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>

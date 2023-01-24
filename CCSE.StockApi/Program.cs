@@ -1,9 +1,21 @@
+using CCSE.StockApi.Data;
 using CCSE.Utils;
+using IdentityServer4.EntityFramework.DbContexts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Configuration
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
+    .AddEnvironmentVariables();
+
+var config = CustomExtensionsMethods.GetConfiguration();
 
 // Add services to the container.
 
@@ -14,10 +26,14 @@ builder.Services.AddSwaggerGen();
 
 builder.Services
     .AddCustomMVC(builder.Configuration)
-    .AddCustomAuthentication(builder.Configuration);
+    .AddCustomAuthentication(builder.Configuration)
+    .AddCustomDbContext(builder.Configuration);
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.
+
+
+
 
 if (app.Environment.IsDevelopment())
 {
@@ -32,7 +48,18 @@ app.MapControllers();
 await app.RunAsync();
 
 static class CustomExtensionsMethods
-{    
+{
+
+    internal static IConfiguration GetConfiguration()
+    {
+        var builder = new ConfigurationBuilder()
+        .SetBasePath(Directory.GetCurrentDirectory())
+        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+        .AddEnvironmentVariables();
+
+        var config = builder.Build();
+        return config;
+    }
     public static IServiceCollection AddCustomMVC(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddControllers();
@@ -89,6 +116,34 @@ static class CustomExtensionsMethods
         });
 
         services.AddAuthorization();
+
+        return services;
+    }
+
+    public static IServiceCollection AddCustomDbContext(this IServiceCollection services, IConfiguration configuration)
+    {
+        var identityUrl = configuration.GetValue<string>("IdentityUrl");
+
+        string applicationDbContextConnectionString =
+           configuration.GetSection("ConnectionStrings").GetValue<string>("ApplicationDbContext");
+
+        var migrationsAssembly = typeof(Program).GetTypeInfo().Assembly.GetName().Name;
+
+        // User db context
+        services.AddDbContext<StockDBContext>(options =>
+        {
+            options.UseNpgsql(applicationDbContextConnectionString,
+                npgsqlOptionsAction: psqlOptions =>
+                {
+                    psqlOptions.EnableRetryOnFailure(
+                         maxRetryCount: 10,
+                    maxRetryDelay: TimeSpan.FromSeconds(30), errorCodesToAdd: null);
+                    psqlOptions.MigrationsAssembly(typeof(Program).GetTypeInfo().Assembly.GetName().Name);
+                });
+        });
+
+     
+
 
         return services;
     }

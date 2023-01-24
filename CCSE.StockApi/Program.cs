@@ -1,4 +1,6 @@
 using CCSE.StockApi.Data;
+using CCSE.StockApi.IRepositories;
+using CCSE.StockApi.Repositories;
 using CCSE.Utils;
 using IdentityServer4.EntityFramework.DbContexts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -145,9 +147,9 @@ static class CustomExtensionsMethods
                 });
         });
 
-     
 
 
+        services.AddTransient<IStockRepository, StockRepository>();
         return services;
     }
 }

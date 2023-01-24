@@ -46,6 +46,7 @@ namespace CCSE.StockApi.Controllers
         // PUT: api/Stock/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> PutStock(string id, Stock stock)
         {
             if (id != stock.id)
@@ -102,6 +103,7 @@ namespace CCSE.StockApi.Controllers
 
         // DELETE: api/Stock/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteStock(string id)
         {
             var stock = await _context.Stock.FindAsync(id);

@@ -865,3 +865,214 @@ WHERE a."RoleId" = @__role_Id_0
 2023-01-24 17:47:04.825 +00:00 [INF] Executed action UserService.Controllers.Account.AdminLogin (CCSE.UserService) in 13424.8486ms
 2023-01-24 17:47:04.828 +00:00 [INF] Executed endpoint 'UserService.Controllers.Account.AdminLogin (CCSE.UserService)'
 2023-01-24 17:47:04.850 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8001/api/Account/login application/json-patch+json 62 - 200 1342 application/json;+charset=utf-8 13731.6504ms
+2023-01-24 18:23:01.919 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-24 18:23:01.964 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-24 18:23:02.509 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-24 18:23:02.512 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 18:23:02.514 +00:00 [INF] Hosting environment: Development
+2023-01-24 18:23:02.516 +00:00 [INF] Content root path: /app/
+2023-01-24 18:34:46.947 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-24 18:34:47.070 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-24 18:34:48.033 +00:00 [INF] Creating key {0a1dee72-27b2-4387-9aea-3675ae7ae2ab} with creation date 2023-01-24 18:34:48Z, activation date 2023-01-24 18:34:48Z, and expiration date 2023-04-24 18:34:48Z.
+2023-01-24 18:34:48.072 +00:00 [WRN] No XML encryptor configured. Key {0a1dee72-27b2-4387-9aea-3675ae7ae2ab} may be persisted to storage in unencrypted form.
+2023-01-24 18:34:48.080 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-0a1dee72-27b2-4387-9aea-3675ae7ae2ab.xml'.
+2023-01-24 18:34:48.240 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-24 18:34:48.243 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 18:34:48.265 +00:00 [INF] Hosting environment: Development
+2023-01-24 18:34:48.274 +00:00 [INF] Content root path: /app/
+2023-01-24 18:36:01.395 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - -
+2023-01-24 18:36:01.489 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - - - 200 - text/html;charset=utf-8 97.2952ms
+2023-01-24 18:36:02.352 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - -
+2023-01-24 18:36:02.473 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.4555ms
+2023-01-24 18:40:36.954 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-24 18:40:37.071 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-24 18:40:37.855 +00:00 [INF] Creating key {545d76e1-41cb-488b-aa0f-40a9350beab4} with creation date 2023-01-24 18:40:37Z, activation date 2023-01-24 18:40:37Z, and expiration date 2023-04-24 18:40:37Z.
+2023-01-24 18:40:37.894 +00:00 [WRN] No XML encryptor configured. Key {545d76e1-41cb-488b-aa0f-40a9350beab4} may be persisted to storage in unencrypted form.
+2023-01-24 18:40:37.904 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-545d76e1-41cb-488b-aa0f-40a9350beab4.xml'.
+2023-01-24 18:40:38.009 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-24 18:40:38.012 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 18:40:38.014 +00:00 [INF] Hosting environment: Development
+2023-01-24 18:40:38.017 +00:00 [INF] Content root path: /app/
+2023-01-24 18:41:15.669 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - -
+2023-01-24 18:41:15.777 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - - - 200 - text/html;charset=utf-8 110.3353ms
+2023-01-24 18:41:16.477 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - -
+2023-01-24 18:41:16.618 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 140.9070ms
+2023-01-24 18:42:49.587 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/api/Account/login application/json-patch+json 59
+2023-01-24 18:42:49.596 +00:00 [INF] CORS policy execution failed.
+2023-01-24 18:42:49.599 +00:00 [INF] Request origin http://localhost:8001 does not have permission to access the resource.
+2023-01-24 18:42:49.775 +00:00 [INF] Executing endpoint 'UserService.Controllers.Account.AdminLogin (CCSE.UserService)'
+2023-01-24 18:42:49.814 +00:00 [INF] Route matched with {action = "AdminLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminLogin(AuthServer.ViewModels.LoginViewModel) on controller UserService.Controllers.Account (CCSE.UserService).
+2023-01-24 18:42:50.288 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-01-24 18:42:50.380 +00:00 [INF] Executed action UserService.Controllers.Account.AdminLogin (CCSE.UserService) in 557.2832ms
+2023-01-24 18:42:50.385 +00:00 [INF] Executed endpoint 'UserService.Controllers.Account.AdminLogin (CCSE.UserService)'
+2023-01-24 18:42:50.392 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8001/api/Account/login application/json-patch+json 59 - 400 435 application/problem+json;+charset=utf-8 804.3652ms
+2023-01-24 18:43:07.403 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/api/Account/login application/json-patch+json 60
+2023-01-24 18:43:07.416 +00:00 [INF] CORS policy execution failed.
+2023-01-24 18:43:07.421 +00:00 [INF] Request origin http://localhost:8001 does not have permission to access the resource.
+2023-01-24 18:43:07.424 +00:00 [INF] Executing endpoint 'UserService.Controllers.Account.AdminLogin (CCSE.UserService)'
+2023-01-24 18:43:07.430 +00:00 [INF] Route matched with {action = "AdminLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminLogin(AuthServer.ViewModels.LoginViewModel) on controller UserService.Controllers.Account (CCSE.UserService).
+2023-01-24 18:43:07.451 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-01-24 18:43:07.477 +00:00 [INF] Executed action UserService.Controllers.Account.AdminLogin (CCSE.UserService) in 44.2296ms
+2023-01-24 18:43:07.479 +00:00 [INF] Executed endpoint 'UserService.Controllers.Account.AdminLogin (CCSE.UserService)'
+2023-01-24 18:43:07.481 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8001/api/Account/login application/json-patch+json 60 - 400 350 application/problem+json;+charset=utf-8 78.1831ms
+2023-01-24 18:43:28.446 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/api/Account/login application/json-patch+json 62
+2023-01-24 18:43:28.449 +00:00 [INF] CORS policy execution failed.
+2023-01-24 18:43:28.470 +00:00 [INF] Request origin http://localhost:8001 does not have permission to access the resource.
+2023-01-24 18:43:28.473 +00:00 [INF] Executing endpoint 'UserService.Controllers.Account.AdminLogin (CCSE.UserService)'
+2023-01-24 18:43:28.475 +00:00 [INF] Route matched with {action = "AdminLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminLogin(AuthServer.ViewModels.LoginViewModel) on controller UserService.Controllers.Account (CCSE.UserService).
+2023-01-24 18:43:28.494 +00:00 [INF] Entered login API
+2023-01-24 18:43:29.828 +00:00 [INF] Entity Framework Core 6.0.8 initialized 'UserDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: MigrationsAssembly=CCSE.UserService 
+2023-01-24 18:43:32.762 +00:00 [INF] Executed DbCommand (256ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Created", a."CreatedBy", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FirstName", a."IsActive", a."IsVerified", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."LoginProvider", a."Modified", a."ModifiedBy", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a."UserRoleEnum"
+FROM "AppUser" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-01-24 18:43:33.270 +00:00 [INF] Executed DbCommand (165ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Created", a."CreatedBy", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FirstName", a."IsActive", a."IsVerified", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."LoginProvider", a."Modified", a."ModifiedBy", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a."UserRoleEnum"
+FROM "AppUser" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-01-24 18:43:33.618 +00:00 [INF] Executed DbCommand (164ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ClaimType", a."ClaimValue", a."UserId"
+FROM "AppUserClaim" AS a
+WHERE a."UserId" = @__user_Id_0
+2023-01-24 18:43:33.842 +00:00 [INF] Executed DbCommand (145ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AppUserRole" AS a
+INNER JOIN "AppRole" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2023-01-24 18:43:34.027 +00:00 [INF] Executed DbCommand (144ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AppRole" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2023-01-24 18:43:34.198 +00:00 [INF] Executed DbCommand (142ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."ClaimType", a."ClaimValue"
+FROM "AppRoleClaim" AS a
+WHERE a."RoleId" = @__role_Id_0
+2023-01-24 18:43:34.239 +00:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-01-24 18:43:34.274 +00:00 [INF] Start processing HTTP request POST "http://authserver/connect/token"
+2023-01-24 18:43:34.277 +00:00 [INF] Sending HTTP request POST "http://authserver/connect/token"
+2023-01-24 18:43:41.732 +00:00 [INF] Received HTTP response headers after 7445.1014ms - 200
+2023-01-24 18:43:41.774 +00:00 [INF] End processing HTTP request after 7501.633ms - 200
+2023-01-24 18:43:41.838 +00:00 [INF] Executing OkObjectResult, writing value of type 'AuthServer.ViewModels.TokenViewModel'.
+2023-01-24 18:43:41.877 +00:00 [INF] Executed action UserService.Controllers.Account.AdminLogin (CCSE.UserService) in 13399.7931ms
+2023-01-24 18:43:41.896 +00:00 [INF] Executed endpoint 'UserService.Controllers.Account.AdminLogin (CCSE.UserService)'
+2023-01-24 18:43:41.916 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8001/api/Account/login application/json-patch+json 62 - 200 1342 application/json;+charset=utf-8 13471.6344ms
+2023-01-24 18:50:03.930 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-24 18:50:03.980 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-24 18:50:04.619 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-24 18:50:04.622 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 18:50:04.627 +00:00 [INF] Hosting environment: Development
+2023-01-24 18:50:04.629 +00:00 [INF] Content root path: /app/
+2023-01-24 18:50:18.951 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - -
+2023-01-24 18:50:19.054 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - - - 200 - text/html;charset=utf-8 105.5846ms
+2023-01-24 18:50:19.348 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - -
+2023-01-24 18:50:19.470 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.0574ms
+2023-01-24 18:51:10.155 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/api/Account/login application/json-patch+json 62
+2023-01-24 18:51:10.161 +00:00 [INF] CORS policy execution failed.
+2023-01-24 18:51:10.164 +00:00 [INF] Request origin http://localhost:8001 does not have permission to access the resource.
+2023-01-24 18:51:10.367 +00:00 [INF] Executing endpoint 'UserService.Controllers.Account.AdminLogin (CCSE.UserService)'
+2023-01-24 18:51:10.402 +00:00 [INF] Route matched with {action = "AdminLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminLogin(AuthServer.ViewModels.LoginViewModel) on controller UserService.Controllers.Account (CCSE.UserService).
+2023-01-24 18:51:10.834 +00:00 [INF] Entered login API
+2023-01-24 18:51:12.005 +00:00 [INF] Entity Framework Core 6.0.8 initialized 'UserDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: MigrationsAssembly=CCSE.UserService 
+2023-01-24 18:51:14.475 +00:00 [INF] Executed DbCommand (242ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Created", a."CreatedBy", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FirstName", a."IsActive", a."IsVerified", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."LoginProvider", a."Modified", a."ModifiedBy", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a."UserRoleEnum"
+FROM "AppUser" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-01-24 18:51:14.852 +00:00 [INF] Executed DbCommand (146ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Created", a."CreatedBy", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FirstName", a."IsActive", a."IsVerified", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."LoginProvider", a."Modified", a."ModifiedBy", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a."UserRoleEnum"
+FROM "AppUser" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-01-24 18:51:15.145 +00:00 [INF] Executed DbCommand (146ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ClaimType", a."ClaimValue", a."UserId"
+FROM "AppUserClaim" AS a
+WHERE a."UserId" = @__user_Id_0
+2023-01-24 18:51:15.324 +00:00 [INF] Executed DbCommand (134ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AppUserRole" AS a
+INNER JOIN "AppRole" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2023-01-24 18:51:15.498 +00:00 [INF] Executed DbCommand (161ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AppRole" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2023-01-24 18:51:15.663 +00:00 [INF] Executed DbCommand (143ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."ClaimType", a."ClaimValue"
+FROM "AppRoleClaim" AS a
+WHERE a."RoleId" = @__role_Id_0
+2023-01-24 18:51:15.690 +00:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-01-24 18:51:15.721 +00:00 [INF] Start processing HTTP request POST "http://authserver/connect/token"
+2023-01-24 18:51:15.725 +00:00 [INF] Sending HTTP request POST "http://authserver/connect/token"
+2023-01-24 18:51:21.883 +00:00 [INF] Received HTTP response headers after 6153.5831ms - 200
+2023-01-24 18:51:21.887 +00:00 [INF] End processing HTTP request after 6169.4235ms - 200
+2023-01-24 18:51:21.932 +00:00 [INF] Executing OkObjectResult, writing value of type 'AuthServer.ViewModels.TokenViewModel'.
+2023-01-24 18:51:22.017 +00:00 [INF] Executed action UserService.Controllers.Account.AdminLogin (CCSE.UserService) in 11598.7555ms
+2023-01-24 18:51:22.022 +00:00 [INF] Executed endpoint 'UserService.Controllers.Account.AdminLogin (CCSE.UserService)'
+2023-01-24 18:51:22.041 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8001/api/Account/login application/json-patch+json 62 - 200 1342 application/json;+charset=utf-8 11885.5603ms
+2023-01-24 18:55:25.413 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-24 18:55:25.466 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-24 18:55:25.991 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-24 18:55:25.994 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 18:55:25.996 +00:00 [INF] Hosting environment: Development
+2023-01-24 18:55:25.999 +00:00 [INF] Content root path: /app/
+2023-01-24 18:58:19.905 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-24 18:58:19.956 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-24 18:58:20.540 +00:00 [INF] Creating key {d94754e0-6129-41fc-9eed-e5e293354ba7} with creation date 2023-01-24 18:58:20Z, activation date 2023-01-24 18:58:20Z, and expiration date 2023-04-24 18:58:20Z.
+2023-01-24 18:58:20.575 +00:00 [WRN] No XML encryptor configured. Key {d94754e0-6129-41fc-9eed-e5e293354ba7} may be persisted to storage in unencrypted form.
+2023-01-24 18:58:20.591 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-d94754e0-6129-41fc-9eed-e5e293354ba7.xml'.
+2023-01-24 18:58:20.741 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-24 18:58:20.758 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 18:58:20.763 +00:00 [INF] Hosting environment: Development
+2023-01-24 18:58:20.787 +00:00 [INF] Content root path: /app/
+2023-01-24 18:58:39.643 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - -
+2023-01-24 18:58:39.755 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - - - 200 - text/html;charset=utf-8 115.4905ms
+2023-01-24 18:58:39.910 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - -
+2023-01-24 18:58:40.039 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 128.8834ms
+2023-01-24 18:59:30.350 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/api/Account/login application/json-patch+json 62
+2023-01-24 18:59:30.361 +00:00 [INF] CORS policy execution failed.
+2023-01-24 18:59:30.363 +00:00 [INF] Request origin http://localhost:8001 does not have permission to access the resource.
+2023-01-24 18:59:30.521 +00:00 [INF] Executing endpoint 'UserService.Controllers.Account.AdminLogin (CCSE.UserService)'
+2023-01-24 18:59:30.561 +00:00 [INF] Route matched with {action = "AdminLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminLogin(AuthServer.ViewModels.LoginViewModel) on controller UserService.Controllers.Account (CCSE.UserService).
+2023-01-24 18:59:30.989 +00:00 [INF] Entered login API
+2023-01-24 18:59:32.175 +00:00 [INF] Entity Framework Core 6.0.8 initialized 'UserDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: MigrationsAssembly=CCSE.UserService 
+2023-01-24 18:59:34.725 +00:00 [INF] Executed DbCommand (251ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Created", a."CreatedBy", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FirstName", a."IsActive", a."IsVerified", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."LoginProvider", a."Modified", a."ModifiedBy", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a."UserRoleEnum"
+FROM "AppUser" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-01-24 18:59:35.135 +00:00 [INF] Executed DbCommand (162ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Created", a."CreatedBy", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FirstName", a."IsActive", a."IsVerified", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."LoginProvider", a."Modified", a."ModifiedBy", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a."UserRoleEnum"
+FROM "AppUser" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-01-24 18:59:35.464 +00:00 [INF] Executed DbCommand (161ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ClaimType", a."ClaimValue", a."UserId"
+FROM "AppUserClaim" AS a
+WHERE a."UserId" = @__user_Id_0
+2023-01-24 18:59:35.648 +00:00 [INF] Executed DbCommand (139ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AppUserRole" AS a
+INNER JOIN "AppRole" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2023-01-24 18:59:35.804 +00:00 [INF] Executed DbCommand (142ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AppRole" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2023-01-24 18:59:35.978 +00:00 [INF] Executed DbCommand (150ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."ClaimType", a."ClaimValue"
+FROM "AppRoleClaim" AS a
+WHERE a."RoleId" = @__role_Id_0
+2023-01-24 18:59:36.036 +00:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-01-24 18:59:36.086 +00:00 [INF] Start processing HTTP request POST "http://authserver/connect/token"
+2023-01-24 18:59:36.090 +00:00 [INF] Sending HTTP request POST "http://authserver/connect/token"
+2023-01-24 18:59:42.311 +00:00 [INF] Received HTTP response headers after 6214.7435ms - 200
+2023-01-24 18:59:42.315 +00:00 [INF] End processing HTTP request after 6233.7211ms - 200
+2023-01-24 18:59:42.360 +00:00 [INF] Executing OkObjectResult, writing value of type 'AuthServer.ViewModels.TokenViewModel'.
+2023-01-24 18:59:42.447 +00:00 [INF] Executed action UserService.Controllers.Account.AdminLogin (CCSE.UserService) in 11877.9164ms
+2023-01-24 18:59:42.451 +00:00 [INF] Executed endpoint 'UserService.Controllers.Account.AdminLogin (CCSE.UserService)'
+2023-01-24 18:59:42.472 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8001/api/Account/login application/json-patch+json 62 - 200 1342 application/json;+charset=utf-8 12121.8909ms

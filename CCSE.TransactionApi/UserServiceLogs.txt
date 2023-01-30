@@ -1,0 +1,175 @@
+2023-01-24 18:34:46.968 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-24 18:34:47.050 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-24 18:34:47.305 +00:00 [INF] Creating key {964742b4-f436-411d-8e90-cd93985be7ae} with creation date 2023-01-24 18:34:47Z, activation date 2023-01-24 18:34:47Z, and expiration date 2023-04-24 18:34:47Z.
+2023-01-24 18:34:47.395 +00:00 [WRN] No XML encryptor configured. Key {964742b4-f436-411d-8e90-cd93985be7ae} may be persisted to storage in unencrypted form.
+2023-01-24 18:34:47.422 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-964742b4-f436-411d-8e90-cd93985be7ae.xml'.
+2023-01-24 18:34:47.634 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-24 18:34:47.638 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 18:34:47.641 +00:00 [INF] Hosting environment: Development
+2023-01-24 18:34:47.651 +00:00 [INF] Content root path: /app/
+2023-01-24 18:36:21.010 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/index.html - -
+2023-01-24 18:36:21.135 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/index.html - - - 200 - text/html;charset=utf-8 128.7538ms
+2023-01-24 18:36:22.049 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - -
+2023-01-24 18:36:22.086 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: Count cannot be less than zero. (Parameter 'count')
+   at System.String.Remove(Int32 startIndex, Int32 count)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiDescriptionExtensions.RelativePathSansParameterConstraints(ApiDescription apiDescription)
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer)
+   at System.Linq.GroupedEnumerable`2.GetEnumerator()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-24 18:36:22.157 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 108.7061ms
+2023-01-24 18:40:36.858 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-24 18:40:37.004 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-24 18:40:37.267 +00:00 [INF] Creating key {bf7dfaa6-7477-4032-9e90-87bedad671c5} with creation date 2023-01-24 18:40:37Z, activation date 2023-01-24 18:40:37Z, and expiration date 2023-04-24 18:40:37Z.
+2023-01-24 18:40:37.314 +00:00 [WRN] No XML encryptor configured. Key {bf7dfaa6-7477-4032-9e90-87bedad671c5} may be persisted to storage in unencrypted form.
+2023-01-24 18:40:37.336 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-bf7dfaa6-7477-4032-9e90-87bedad671c5.xml'.
+2023-01-24 18:40:37.536 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-24 18:40:37.540 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 18:40:37.544 +00:00 [INF] Hosting environment: Development
+2023-01-24 18:40:37.548 +00:00 [INF] Content root path: /app/
+2023-01-24 18:41:03.046 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/index.html - -
+2023-01-24 18:41:03.158 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/index.html - - - 200 - text/html;charset=utf-8 115.2843ms
+2023-01-24 18:41:03.472 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - -
+2023-01-24 18:41:03.616 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.9728ms
+2023-01-24 18:44:30.625 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/index.html - -
+2023-01-24 18:44:30.630 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/index.html - - - 200 - text/html;charset=utf-8 5.0449ms
+2023-01-24 18:44:31.341 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - -
+2023-01-24 18:44:31.367 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 25.9012ms
+2023-01-24 18:45:26.113 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/api/Transactions application/json-patch+json 119
+2023-01-24 18:45:26.120 +00:00 [INF] CORS policy execution failed.
+2023-01-24 18:45:26.122 +00:00 [INF] Request origin http://localhost:8003 does not have permission to access the resource.
+2023-01-24 18:45:26.283 +00:00 [INF] Executing endpoint 'CCSE.TransactionApi.Controllers.TransactionsController.PostTransaction (CCSE.TransactionApi)'
+2023-01-24 18:45:26.320 +00:00 [INF] Route matched with {action = "PostTransaction", controller = "Transactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CCSE.TransactionApi.Models.Transaction]] PostTransaction(CCSE.TransactionApi.Models.Transaction) on controller CCSE.TransactionApi.Controllers.TransactionsController (CCSE.TransactionApi).
+2023-01-24 18:45:30.879 +00:00 [INF] Executed action CCSE.TransactionApi.Controllers.TransactionsController.PostTransaction (CCSE.TransactionApi) in 4549.8164ms
+2023-01-24 18:45:30.884 +00:00 [INF] Executed endpoint 'CCSE.TransactionApi.Controllers.TransactionsController.PostTransaction (CCSE.TransactionApi)'
+2023-01-24 18:45:30.891 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42P01: relation "Transaction" does not exist
+
+POSITION: 39
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|215_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass31_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method81(Closure , QueryContext )
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at CCSE.TransactionApi.Controllers.TransactionsController.TransactionExists(String id) in D:\CCSE_V2 (1)\CCSE\CCSE.TransactionApi\Controllers\TransactionsController.cs:line 168
+   at CCSE.TransactionApi.Controllers.TransactionsController.PostTransaction(Transaction transaction) in D:\CCSE_V2 (1)\CCSE\CCSE.TransactionApi\Controllers\TransactionsController.cs:line 88
+   at lambda_method7(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Transaction" does not exist
+    Position: 39
+    File: parse_relation.c
+    Line: 1376
+    Routine: parserOpenTable
+2023-01-24 18:45:30.972 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/api/Transactions application/json-patch+json 119 - 500 - text/plain;+charset=utf-8 4859.5485ms
+2023-01-24 18:50:03.961 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-24 18:50:04.013 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-24 18:50:04.460 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-24 18:50:04.463 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 18:50:04.472 +00:00 [INF] Hosting environment: Development
+2023-01-24 18:50:04.476 +00:00 [INF] Content root path: /app/
+2023-01-24 18:51:55.599 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/index.html - -
+2023-01-24 18:51:55.699 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/index.html - - - 200 - text/html;charset=utf-8 102.2080ms
+2023-01-24 18:51:56.001 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - -
+2023-01-24 18:51:56.116 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.8997ms
+2023-01-24 18:52:47.990 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/api/Transactions application/json-patch+json 130
+2023-01-24 18:52:47.998 +00:00 [INF] CORS policy execution failed.
+2023-01-24 18:52:48.000 +00:00 [INF] Request origin http://localhost:8003 does not have permission to access the resource.
+2023-01-24 18:52:48.162 +00:00 [INF] Executing endpoint 'CCSE.TransactionApi.Controllers.TransactionsController.PostTransaction (CCSE.TransactionApi)'
+2023-01-24 18:52:48.194 +00:00 [INF] Route matched with {action = "PostTransaction", controller = "Transactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CCSE.TransactionApi.Models.Transaction]] PostTransaction(CCSE.TransactionApi.Models.Transaction) on controller CCSE.TransactionApi.Controllers.TransactionsController (CCSE.TransactionApi).
+2023-01-24 18:52:51.973 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'CCSE.TransactionApi.Models.Transaction'.
+2023-01-24 18:52:52.063 +00:00 [INF] Executed action CCSE.TransactionApi.Controllers.TransactionsController.PostTransaction (CCSE.TransactionApi) in 3861.9325ms
+2023-01-24 18:52:52.071 +00:00 [INF] Executed endpoint 'CCSE.TransactionApi.Controllers.TransactionsController.PostTransaction (CCSE.TransactionApi)'
+2023-01-24 18:52:52.093 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/api/Transactions application/json-patch+json 130 - 201 105 application/json;+charset=utf-8 4102.3830ms
+2023-01-24 18:55:25.688 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-24 18:55:25.726 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-24 18:55:26.027 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-24 18:55:26.029 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 18:55:26.032 +00:00 [INF] Hosting environment: Development
+2023-01-24 18:55:26.034 +00:00 [INF] Content root path: /app/
+2023-01-24 18:55:50.655 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/index.html - -
+2023-01-24 18:55:50.757 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/index.html - - - 200 - text/html;charset=utf-8 104.5252ms
+2023-01-24 18:55:50.840 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - -
+2023-01-24 18:55:50.973 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.0847ms
+2023-01-24 18:56:31.742 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/api/Transactions application/json-patch+json 120
+2023-01-24 18:56:31.752 +00:00 [INF] CORS policy execution failed.
+2023-01-24 18:56:31.755 +00:00 [INF] Request origin http://localhost:8003 does not have permission to access the resource.
+2023-01-24 18:56:31.891 +00:00 [INF] Executing endpoint 'CCSE.TransactionApi.Controllers.TransactionsController.PostTransaction (CCSE.TransactionApi)'
+2023-01-24 18:56:31.922 +00:00 [INF] Route matched with {action = "PostTransaction", controller = "Transactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CCSE.TransactionApi.Models.Transaction]] PostTransaction(CCSE.TransactionApi.Models.Transaction) on controller CCSE.TransactionApi.Controllers.TransactionsController (CCSE.TransactionApi).
+2023-01-24 18:56:35.500 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'CCSE.TransactionApi.Models.Transaction'.
+2023-01-24 18:56:35.597 +00:00 [INF] Executed action CCSE.TransactionApi.Controllers.TransactionsController.PostTransaction (CCSE.TransactionApi) in 3668.9568ms
+2023-01-24 18:56:35.604 +00:00 [INF] Executed endpoint 'CCSE.TransactionApi.Controllers.TransactionsController.PostTransaction (CCSE.TransactionApi)'
+2023-01-24 18:56:35.626 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/api/Transactions application/json-patch+json 120 - 201 95 application/json;+charset=utf-8 3883.6625ms
+2023-01-24 18:58:19.855 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-24 18:58:19.903 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-24 18:58:20.203 +00:00 [INF] Creating key {58d15336-ab43-4811-ac87-8aa1014f1568} with creation date 2023-01-24 18:58:20Z, activation date 2023-01-24 18:58:20Z, and expiration date 2023-04-24 18:58:20Z.
+2023-01-24 18:58:20.248 +00:00 [WRN] No XML encryptor configured. Key {58d15336-ab43-4811-ac87-8aa1014f1568} may be persisted to storage in unencrypted form.
+2023-01-24 18:58:20.257 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-58d15336-ab43-4811-ac87-8aa1014f1568.xml'.
+2023-01-24 18:58:20.417 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-24 18:58:20.430 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-24 18:58:20.434 +00:00 [INF] Hosting environment: Development
+2023-01-24 18:58:20.439 +00:00 [INF] Content root path: /app/
+2023-01-24 19:00:05.669 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/index.html - -
+2023-01-24 19:00:05.774 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/index.html - - - 200 - text/html;charset=utf-8 108.7259ms
+2023-01-24 19:00:05.882 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - -
+2023-01-24 19:00:05.998 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 115.9593ms
+2023-01-24 19:00:38.083 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/api/Transactions/Buy application/json-patch+json 119
+2023-01-24 19:00:38.090 +00:00 [INF] CORS policy execution failed.
+2023-01-24 19:00:38.092 +00:00 [INF] Request origin http://localhost:8003 does not have permission to access the resource.
+2023-01-24 19:00:38.266 +00:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (PowerUser|Admin)
+2023-01-24 19:00:38.275 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-01-24 19:00:38.279 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/api/Transactions/Buy application/json-patch+json 119 - 401 0 - 196.3927ms
+2023-01-24 19:01:10.907 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/api/Transactions/Buy application/json 127
+2023-01-24 19:01:11.906 +00:00 [INF] Executing endpoint 'CCSE.TransactionApi.Controllers.TransactionsController.Buy (CCSE.TransactionApi)'
+2023-01-24 19:01:11.933 +00:00 [INF] Route matched with {action = "Buy", controller = "Transactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CCSE.TransactionApi.Models.Transaction]] Buy(CCSE.TransactionApi.Models.Transaction) on controller CCSE.TransactionApi.Controllers.TransactionsController (CCSE.TransactionApi).
+2023-01-24 19:01:16.572 +00:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-01-24 19:01:16.658 +00:00 [INF] Executed action CCSE.TransactionApi.Controllers.TransactionsController.Buy (CCSE.TransactionApi) in 4717.4965ms
+2023-01-24 19:01:16.692 +00:00 [INF] Executed endpoint 'CCSE.TransactionApi.Controllers.TransactionsController.Buy (CCSE.TransactionApi)'
+2023-01-24 19:01:16.720 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/api/Transactions/Buy application/json 127 - 409 160 application/problem+json;+charset=utf-8 5813.1221ms
+2023-01-24 19:01:25.069 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/api/Transactions/Buy application/json 127
+2023-01-24 19:01:25.104 +00:00 [INF] Executing endpoint 'CCSE.TransactionApi.Controllers.TransactionsController.Buy (CCSE.TransactionApi)'
+2023-01-24 19:01:25.107 +00:00 [INF] Route matched with {action = "Buy", controller = "Transactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CCSE.TransactionApi.Models.Transaction]] Buy(CCSE.TransactionApi.Models.Transaction) on controller CCSE.TransactionApi.Controllers.TransactionsController (CCSE.TransactionApi).
+2023-01-24 19:01:25.705 +00:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-01-24 19:01:25.708 +00:00 [INF] Executed action CCSE.TransactionApi.Controllers.TransactionsController.Buy (CCSE.TransactionApi) in 597.8955ms
+2023-01-24 19:01:25.732 +00:00 [INF] Executed endpoint 'CCSE.TransactionApi.Controllers.TransactionsController.Buy (CCSE.TransactionApi)'
+2023-01-24 19:01:25.737 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/api/Transactions/Buy application/json 127 - 409 160 application/problem+json;+charset=utf-8 667.9028ms
+2023-01-24 19:01:51.686 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/api/Transactions/Buy application/json 129
+2023-01-24 19:01:51.688 +00:00 [INF] Executing endpoint 'CCSE.TransactionApi.Controllers.TransactionsController.Buy (CCSE.TransactionApi)'
+2023-01-24 19:01:51.690 +00:00 [INF] Route matched with {action = "Buy", controller = "Transactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CCSE.TransactionApi.Models.Transaction]] Buy(CCSE.TransactionApi.Models.Transaction) on controller CCSE.TransactionApi.Controllers.TransactionsController (CCSE.TransactionApi).
+2023-01-24 19:01:52.031 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'CCSE.TransactionApi.Models.Transaction'.
+2023-01-24 19:01:52.069 +00:00 [INF] Executed action CCSE.TransactionApi.Controllers.TransactionsController.Buy (CCSE.TransactionApi) in 376.1318ms
+2023-01-24 19:01:52.071 +00:00 [INF] Executed endpoint 'CCSE.TransactionApi.Controllers.TransactionsController.Buy (CCSE.TransactionApi)'
+2023-01-24 19:01:52.073 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/api/Transactions/Buy application/json 129 - 201 96 application/json;+charset=utf-8 388.0529ms

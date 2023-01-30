@@ -6,9 +6,9 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["CCSE.UserService/CCSE.UserService.csproj", "CCSE.UserService/"]
- COPY ["CCSE.AuthServer/CCSE.AuthServer.csproj", "CCSE.AuthServer/"]
-  COPY ["CCSE.Utils/CCSE.Utils.csproj", "CCSE.Utils/"]
+#COPY ["CCSE.UserService/CCSE.UserService.csproj", "CCSE.UserService/"]
+ #COPY ["CCSE.AuthServer/CCSE.AuthServer.csproj", "CCSE.AuthServer/"]
+  #COPY ["CCSE.Utils/CCSE.Utils.csproj", "CCSE.Utils/"]
 
 RUN dotnet restore "CCSE.UserService/CCSE.UserService.csproj"
 COPY . .

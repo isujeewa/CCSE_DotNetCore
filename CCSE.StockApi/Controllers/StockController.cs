@@ -49,6 +49,7 @@ namespace CCSE.StockApi.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> PutStock(string id, Stock stock)
         {
+            // test
             if (id != stock.id)
             {
                 return BadRequest();

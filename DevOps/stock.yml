@@ -36,7 +36,7 @@ spec:
         - name: regcred  #ecr stock secret
       containers:
         - name: stock-pod
-          image: 377379411010.dkr.ecr.ap-northeast-1.amazonaws.com/se:StockService12 # {"$imagepolicy": "flux-system:identity"}
+          image: 377379411010.dkr.ecr.ap-northeast-1.amazonaws.com/se:StockService13 # {"$imagepolicy": "flux-system:identity"}
           imagePullPolicy: IfNotPresent
           resources:
             requests:

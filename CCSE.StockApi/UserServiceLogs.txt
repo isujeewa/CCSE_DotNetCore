@@ -94,3 +94,40 @@ RolesAuthorizationRequirement:User.IsInRole must be true for one of the followin
 2023-01-24 18:58:20.401 +00:00 [INF] Application started. Press Ctrl+C to shut down.
 2023-01-24 18:58:20.405 +00:00 [INF] Hosting environment: Development
 2023-01-24 18:58:20.409 +00:00 [INF] Content root path: /app/
+2023-01-30 16:16:38.414 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-30 16:16:38.450 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-30 16:16:38.858 +00:00 [INF] Creating key {84710eee-0961-4d65-9e69-b074726e3ff7} with creation date 2023-01-30 16:16:38Z, activation date 2023-01-30 16:16:38Z, and expiration date 2023-04-30 16:16:38Z.
+2023-01-30 16:16:38.905 +00:00 [WRN] No XML encryptor configured. Key {84710eee-0961-4d65-9e69-b074726e3ff7} may be persisted to storage in unencrypted form.
+2023-01-30 16:16:38.916 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-84710eee-0961-4d65-9e69-b074726e3ff7.xml'.
+2023-01-30 16:16:39.065 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-30 16:16:39.069 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-30 16:16:39.072 +00:00 [INF] Hosting environment: Development
+2023-01-30 16:16:39.079 +00:00 [INF] Content root path: /app/
+2023-01-30 16:17:17.435 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-30 16:17:17.471 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-30 16:17:17.694 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-30 16:17:17.697 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-30 16:17:17.700 +00:00 [INF] Hosting environment: Development
+2023-01-30 16:17:17.703 +00:00 [INF] Content root path: /app/
+2023-01-30 16:31:40.791 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-30 16:31:40.822 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-30 16:31:40.945 +00:00 [INF] Creating key {d094aec6-50d7-4ad9-9b75-7f1cdbbfabf8} with creation date 2023-01-30 16:31:40Z, activation date 2023-01-30 16:31:40Z, and expiration date 2023-04-30 16:31:40Z.
+2023-01-30 16:31:40.986 +00:00 [WRN] No XML encryptor configured. Key {d094aec6-50d7-4ad9-9b75-7f1cdbbfabf8} may be persisted to storage in unencrypted form.
+2023-01-30 16:31:41.000 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-d094aec6-50d7-4ad9-9b75-7f1cdbbfabf8.xml'.
+2023-01-30 16:31:41.114 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-30 16:31:41.117 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-30 16:31:41.140 +00:00 [INF] Hosting environment: Development
+2023-01-30 16:31:41.145 +00:00 [INF] Content root path: /app/
+2023-01-30 16:34:11.433 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2023-01-30 16:34:11.488 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-30 16:34:11.584 +00:00 [INF] Creating key {393e7eea-bb90-43f5-b05f-9e19b7778b78} with creation date 2023-01-30 16:34:11Z, activation date 2023-01-30 16:34:11Z, and expiration date 2023-04-30 16:34:11Z.
+2023-01-30 16:34:11.606 +00:00 [WRN] No XML encryptor configured. Key {393e7eea-bb90-43f5-b05f-9e19b7778b78} may be persisted to storage in unencrypted form.
+2023-01-30 16:34:11.612 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-393e7eea-bb90-43f5-b05f-9e19b7778b78.xml'.
+2023-01-30 16:34:11.701 +00:00 [INF] Now listening on: http://[::]:80
+2023-01-30 16:34:11.704 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-30 16:34:11.707 +00:00 [INF] Hosting environment: Development
+2023-01-30 16:34:11.709 +00:00 [INF] Content root path: /app/
+2023-01-30 16:34:33.759 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8002/swagger/index.html - -
+2023-01-30 16:34:33.852 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8002/swagger/index.html - - - 200 - text/html;charset=utf-8 94.6331ms
+2023-01-30 16:34:34.358 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8002/swagger/v1/swagger.json - -
+2023-01-30 16:34:34.435 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.6963ms

@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/CCSE.UserService/UserServiceLogs.txt
+/CCSE.TransactionApi/UserServiceLogs.txt
+/CCSE.StockApi/UserServiceLogs.txt

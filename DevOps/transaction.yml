@@ -36,7 +36,7 @@ spec:
         - name: regcred  #ecr transaction secret
       containers:
         - name: transaction-pod
-          image: 377379411010.dkr.ecr.ap-northeast-1.amazonaws.com/se:TransactionService8 # {"$imagepolicy": "flux-system:identity"}
+          image: 377379411010.dkr.ecr.ap-northeast-1.amazonaws.com/se:TransactionService9 # {"$imagepolicy": "flux-system:identity"}
           imagePullPolicy: IfNotPresent
           resources:
             requests:

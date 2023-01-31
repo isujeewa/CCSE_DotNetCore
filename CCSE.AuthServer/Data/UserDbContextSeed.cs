@@ -129,8 +129,8 @@ namespace AuthServer.Data
         new AppUser()
         {
             Email = "poweruser2@ccse.com",
-            FirstName = "ccse",
-            LastName = "Power User",
+            FirstName = "ccse2",
+            LastName = "Power User2",
             Created = DateTime.UtcNow,
             CreatedBy = "CCSE",
             IsActive = true,

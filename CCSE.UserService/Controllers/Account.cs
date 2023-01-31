@@ -118,7 +118,7 @@ namespace UserService.Controllers
         [Authorize]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "value1", "value2","2022" };
         }
 
         // GET api/<Account>/5

@@ -76,7 +76,7 @@ namespace CCSE.StockApi.Controllers
             return NoContent();
         }
 
-        // POST: api/Stock
+        // POST: api/Stock/
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         [Authorize(Roles = "Admin")]

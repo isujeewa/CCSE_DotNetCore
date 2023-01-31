@@ -125,6 +125,26 @@ namespace AuthServer.Data
             user.PasswordHash = _passwordHasher.HashPassword(user, "poweruser@1234");
             list.Add(user);
 
+            user =
+        new AppUser()
+        {
+            Email = "poweruser2@ccse.com",
+            FirstName = "ccse",
+            LastName = "Power User",
+            Created = DateTime.UtcNow,
+            CreatedBy = "CCSE",
+            IsActive = true,
+            UserRoleEnum = UserRole.PowerUser,
+            UserName = "poweruser2@ccse.com",
+            NormalizedEmail = "poweruser2@ccse.com",
+            NormalizedUserName = "poweruser2@ccse.com",
+            SecurityStamp = Guid.NewGuid().ToString("D"),
+            EmailConfirmed = true,
+            ModifiedBy = ""
+        };
+            user.PasswordHash = _passwordHasher.HashPassword(user, "poweruser2@1234");
+            list.Add(user);
+
             return list;
 
         }

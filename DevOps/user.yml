@@ -36,7 +36,7 @@ spec:
         - name: regcred  #ecr user secret
       containers:
         - name: user-pod
-          image: 377379411010.dkr.ecr.ap-northeast-1.amazonaws.com/se:UserService25 # {"$imagepolicy": "flux-system:identity"}
+          image: 377379411010.dkr.ecr.ap-northeast-1.amazonaws.com/se:UserService26 # {"$imagepolicy": "flux-system:identity"}
           imagePullPolicy: IfNotPresent
           resources:
             requests:
